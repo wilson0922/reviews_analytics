@@ -20,5 +20,14 @@ for d in data:
 print('一共', len(new), '筆留言長度小於100')
 print(new[1])
 
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('一共', len(good), '筆留言包含good')
+print(good[0])
+
+bad = [d for d in data if 'bad' in d]
+print(bad[0])
 
 
